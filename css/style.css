@@ -1,0 +1,124 @@
+
+:root {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --text-primary: #020826;
+    --text-secondary: #fff;
+    --bg-primary: #f9f4ef;
+    --bg-secondary: #eaddcf;
+}
+  
+body {
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin-left: 20%;
+    padding: 1rem;
+}
+
+#navbar{
+    position: fixed;
+    background-color: var(--bg-primary); 
+    width: 20%;
+    height: 100vh;
+    border-right: solid;
+    border-color:#000;
+    transition: width 600ms ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+}
+
+.nav-item{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #000;
+    width: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--text-primary);
+    width: 100%;
+    line-height: 2rem;
+    margin-left: 1rem;
+}
+
+header {
+    color: var(--text-primary);
+    margin: 10px;
+    text-align: left;
+    font-size: 2em;
+    font-weight:bold;
+}
+
+#ptitle {
+    color: var(--text-primary);
+    font-size: normal;
+    text-align: center;
+    margin: .5rem;
+    font-weight: lighter;
+    line-height: 3.5rem;
+    overflow-wrap: break-word;
+}
+
+.nav-item:hover{
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+code {
+    display: block;
+    word-wrap: normal;
+    line-height: 1.3rem;
+    background-color: #eaddcf;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 8px;
+  }
+
+@media (max-width: 666px) {
+
+    #navbar {
+    background-color: #eaddcf;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    max-height: 20%;
+    border: none;
+    border-bottom: 2px solid;
+    overflow-y: auto;
+    }
+
+    main{
+    margin-top: 37%;
+    margin-left: auto;
+    padding: 1rem;
+    text-align: center;
+    }
+    
+    code {
+    display: block;
+    word-wrap: break-word;
+    line-height: 1.3rem;
+    background-color: #eaddcf;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 8px;
+    }
+}
